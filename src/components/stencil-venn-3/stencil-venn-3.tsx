@@ -68,13 +68,13 @@ export class StencilVenn3 {
         <tspan x="134.62927" y="200.15001" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(2) }</tspan>
       </text>
       <text x="134.61136" y="118.76494" style="line-height:1.25">
-        <tspan x="134.61136" y="118.76494" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">0</tspan>
+        <tspan x="134.61136" y="118.76494" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(6) }</tspan>
       </text>
       <text x="171.06842" y="142.40825" style="line-height:1.25">
-        <tspan x="171.06842" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">0</tspan>
+        <tspan x="171.06842" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(4) }</tspan>
       </text>
       <text x="98.203461" y="142.40825" style="line-height:1.25">
-        <tspan x="98.203461" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">0</tspan>
+        <tspan x="98.203461" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(5) }</tspan>
       </text>
       </g>
     </g>
