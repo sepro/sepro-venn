@@ -15,7 +15,6 @@ export class StencilVenn3 {
   @Prop() scale: number=1;
 
   get_value(pos: number): string {
-    console.log(this.values);
     let _v = this.values.split(',');
 
     return _v[pos]
