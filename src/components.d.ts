@@ -30,20 +30,18 @@ export namespace Components {
   }
 
   interface StencilVenn3 {
-    'intersection_value': string;
+    'bottom': string;
     'left': string;
-    'left_value': string;
     'right': string;
-    'right_value': string;
     'scale': number;
+    'values': string;
   }
   interface StencilVenn3Attributes extends StencilHTMLAttributes {
-    'intersection_value'?: string;
+    'bottom'?: string;
     'left'?: string;
-    'left_value'?: string;
     'right'?: string;
-    'right_value'?: string;
     'scale'?: number;
+    'values'?: string;
   }
 }
 

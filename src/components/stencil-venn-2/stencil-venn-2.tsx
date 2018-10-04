@@ -13,18 +13,18 @@ export class StencilVenn2 {
   @Prop() intersection_value: string;
   @Prop() right_value: string;
 
-  @Prop() scale: number=4;
+  @Prop() scale: number=1;
 
   transform(): string {
-    return ("matrix(" + this.scale + " 0 0 " + this.scale + " 0 0)")
+    return ("matrix(" + this.scale*4 + " 0 0 " + this.scale*4 + " 0 0)")
   }
 
   width(): number {
-    return (74*this.scale)
+    return (296*this.scale)
   }
 
   height(): number {
-    return (29*this.scale)
+    return (116*this.scale)
   }
 
   render() {
