@@ -12,7 +12,7 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface StencilVenn {
+  interface StencilVenn2 {
     'intersection_value': string;
     'left': string;
     'left_value': string;
@@ -20,7 +20,24 @@ export namespace Components {
     'right_value': string;
     'scale': number;
   }
-  interface StencilVennAttributes extends StencilHTMLAttributes {
+  interface StencilVenn2Attributes extends StencilHTMLAttributes {
+    'intersection_value'?: string;
+    'left'?: string;
+    'left_value'?: string;
+    'right'?: string;
+    'right_value'?: string;
+    'scale'?: number;
+  }
+
+  interface StencilVenn3 {
+    'intersection_value': string;
+    'left': string;
+    'left_value': string;
+    'right': string;
+    'right_value': string;
+    'scale': number;
+  }
+  interface StencilVenn3Attributes extends StencilHTMLAttributes {
     'intersection_value'?: string;
     'left'?: string;
     'left_value'?: string;
@@ -32,26 +49,36 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'StencilVenn': Components.StencilVenn;
+    'StencilVenn2': Components.StencilVenn2;
+    'StencilVenn3': Components.StencilVenn3;
   }
 
   interface StencilIntrinsicElements {
-    'stencil-venn': Components.StencilVennAttributes;
+    'stencil-venn-2': Components.StencilVenn2Attributes;
+    'stencil-venn-3': Components.StencilVenn3Attributes;
   }
 
 
-  interface HTMLStencilVennElement extends Components.StencilVenn, HTMLStencilElement {}
-  var HTMLStencilVennElement: {
-    prototype: HTMLStencilVennElement;
-    new (): HTMLStencilVennElement;
+  interface HTMLStencilVenn2Element extends Components.StencilVenn2, HTMLStencilElement {}
+  var HTMLStencilVenn2Element: {
+    prototype: HTMLStencilVenn2Element;
+    new (): HTMLStencilVenn2Element;
+  };
+
+  interface HTMLStencilVenn3Element extends Components.StencilVenn3, HTMLStencilElement {}
+  var HTMLStencilVenn3Element: {
+    prototype: HTMLStencilVenn3Element;
+    new (): HTMLStencilVenn3Element;
   };
 
   interface HTMLElementTagNameMap {
-    'stencil-venn': HTMLStencilVennElement
+    'stencil-venn-2': HTMLStencilVenn2Element
+    'stencil-venn-3': HTMLStencilVenn3Element
   }
 
   interface ElementTagNameMap {
-    'stencil-venn': HTMLStencilVennElement;
+    'stencil-venn-2': HTMLStencilVenn2Element;
+    'stencil-venn-3': HTMLStencilVenn3Element;
   }
 
 

@@ -1,0 +1,8 @@
+.grow { 
+    transition: all .2s ease-in-out;
+    opacity: 0.85;
+ }
+
+.grow:hover { 
+    opacity: 1;
+}

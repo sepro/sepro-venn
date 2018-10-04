@@ -1,11 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'stencil-venn',
-  styleUrl: 'stencil-venn.css',
+  tag: 'stencil-venn-2',
+  styleUrl: 'stencil-venn-2.css',
   shadow: true
 })
-export class StencilVenn {
+export class StencilVenn2 {
   @Prop() left: string;
   @Prop() right: string;
 
