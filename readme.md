@@ -7,7 +7,7 @@ This javascript library allows you to quickly and effortlessly add venn diagrams
     <stencil-venn labels='["Left", "Right"]' values='[1,2,3]'>
     <stencil-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'>
 
-[two set venn](./docs/two_set.png "Two Set Venn Diagram")
+![two set venn](./docs/two_set.png "Two Set Venn Diagram")
 ![three set venn](./docs/three_set.png "Three Set Venn Diagram")
 
 ## Scaling things up (or down)
