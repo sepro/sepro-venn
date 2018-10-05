@@ -13,33 +13,23 @@ import '@stencil/core';
 export namespace Components {
 
   interface StencilVenn2 {
-    'intersection_value': string;
-    'left': string;
-    'left_value': string;
-    'right': string;
-    'right_value': string;
+    'labels': string;
     'scale': number;
+    'values': string;
   }
   interface StencilVenn2Attributes extends StencilHTMLAttributes {
-    'intersection_value'?: string;
-    'left'?: string;
-    'left_value'?: string;
-    'right'?: string;
-    'right_value'?: string;
+    'labels'?: string;
     'scale'?: number;
+    'values'?: string;
   }
 
   interface StencilVenn3 {
-    'bottom': string;
-    'left': string;
-    'right': string;
+    'labels': string;
     'scale': number;
     'values': string;
   }
   interface StencilVenn3Attributes extends StencilHTMLAttributes {
-    'bottom'?: string;
-    'left'?: string;
-    'right'?: string;
+    'labels'?: string;
     'scale'?: number;
     'values'?: string;
   }

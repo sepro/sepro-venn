@@ -3,25 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <title>Stencil Venn Example</title>
   <script src="/build/stencilvenn.js"></script>
 
 </head>
 <body>
-  
+  <h1>Stencil-Venn Examples</h1>
+  <h2>Two Classes</h2>
   <stencil-venn-2 
-    left="Left" 
-    right="Right"
-    left_value="1"
-    intersection_value="2"
-    right_value="3"
+    labels='["Left", "Right"]'
+    values='[1,2,3]'
     scale=1></stencil-venn-2>
-    <br />
+    <hr />
+    <h2>Three Classes</h2>
     <stencil-venn-3 
-    left="Left" 
-    right="Right"
-    bottom="Bottom"
-    values="1,2,3,4,5,6,7"></stencil-venn-3>
+    labels='["Left", "Right", "Bottom"]'
+    values='[1,2,3,4,5,6,7]'></stencil-venn-3>
 
 </body>
 </html>

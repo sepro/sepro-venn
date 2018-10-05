@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, Watch } from '@stencil/core';
 
 @Component({
   tag: 'stencil-venn-3',
@@ -6,19 +6,18 @@ import { Component, Prop } from '@stencil/core';
   shadow: true
 })
 export class StencilVenn3 {
-  @Prop() left: string;
-  @Prop() right: string;
-  @Prop() bottom: string;
-
+  @Prop() labels: string;
   @Prop() values: string;
 
   @Prop() scale: number=1;
 
-  get_value(pos: number): string {
-    let _v = this.values.split(',');
+  innerLabels: string[] = [];
+  innerValues: string[] = [];
 
-    return _v[pos]
-  }
+  componentWillLoad() {
+    this.innerLabels = JSON.parse(this.labels);
+    this.innerValues = JSON.parse(this.values)
+  }  
 
   transform(): string {
     return ("matrix(" + this.scale + " 0 0 " + this.scale + " 0 0)")
@@ -31,6 +30,16 @@ export class StencilVenn3 {
   height(): number {
     return (260*this.scale)
   }
+  
+  @Watch('labels')
+  labelsDidChangeHandler(newValue: string) {
+    this.innerLabels = JSON.parse(newValue);
+  }
+
+  @Watch('values')
+  valuesDidChangeHandler(newValue: string) {
+    this.innerValues = JSON.parse(newValue);
+  } 
 
   render() {
     return <svg id="venn-svg" version="1.1" width={ this.width() } height={ this.height() }  xmlns="http://www.w3.org/2000/svg">
@@ -46,34 +55,34 @@ export class StencilVenn3 {
       </g>
       <g fill="#000000" font-family="sans-serif" font-size="48px" letter-spacing="0px" stroke-width="1.0583" word-spacing="0px">
       <text x="72.733826" y="71.964066" style="line-height:1.25">
-        <tspan x="72.733826" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(0) }</tspan>
+        <tspan x="72.733826" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan>
       </text>
       <text x="134.6283" y="71.964066" style="line-height:1.25">
-        <tspan x="134.6283" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(3) }</tspan>
+        <tspan x="134.6283" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[3] }</tspan>
       </text>
       <text x="196.47906" y="71.964066" style="line-height:1.25">
-        <tspan x="196.47906" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(1) }</tspan>
+        <tspan x="196.47906" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan>
       </text>
       <text x="15.367762" y="8.207531" style="line-height:1.25">
-        <tspan x="15.367762" y="8.207531" font-size="11.289px" stroke-width="1.0583">{ this.left }</tspan>
+        <tspan x="15.367762" y="8.207531" font-size="11.289px" stroke-width="1.0583">{ this.innerLabels[0] }</tspan>
       </text>
       <text x="249.91129" y="8.207531" style="line-height:1.25">
-        <tspan x="249.91129" y="8.207531" font-size="11.289px" stroke-width="1.0583" text-align="end" text-anchor="end">{ this.right }</tspan>
+        <tspan x="249.91129" y="8.207531" font-size="11.289px" stroke-width="1.0583" text-align="end" text-anchor="end">{ this.innerLabels[1] }</tspan>
       </text>
       <text x="134.35367" y="243.97731" style="line-height:1.25">
-        <tspan x="134.35367" y="243.97731" font-size="11.289px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.bottom }</tspan>
+        <tspan x="134.35367" y="243.97731" font-size="11.289px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerLabels[2] }</tspan>
       </text>
       <text x="134.62927" y="200.15001" style="line-height:1.25">
-        <tspan x="134.62927" y="200.15001" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(2) }</tspan>
+        <tspan x="134.62927" y="200.15001" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan>
       </text>
       <text x="134.61136" y="118.76494" style="line-height:1.25">
-        <tspan x="134.61136" y="118.76494" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(6) }</tspan>
+        <tspan x="134.61136" y="118.76494" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[6] }</tspan>
       </text>
       <text x="171.06842" y="142.40825" style="line-height:1.25">
-        <tspan x="171.06842" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(4) }</tspan>
+        <tspan x="171.06842" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[4] }</tspan>
       </text>
       <text x="98.203461" y="142.40825" style="line-height:1.25">
-        <tspan x="98.203461" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.get_value(5) }</tspan>
+        <tspan x="98.203461" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[5] }</tspan>
       </text>
       </g>
     </g>
