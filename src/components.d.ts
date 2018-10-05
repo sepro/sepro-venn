@@ -33,17 +33,30 @@ export namespace Components {
     'scale'?: number;
     'values'?: string;
   }
+
+  interface StencilVenn {
+    'labels': string;
+    'scale': number;
+    'values': string;
+  }
+  interface StencilVennAttributes extends StencilHTMLAttributes {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'StencilVenn2': Components.StencilVenn2;
     'StencilVenn3': Components.StencilVenn3;
+    'StencilVenn': Components.StencilVenn;
   }
 
   interface StencilIntrinsicElements {
     'stencil-venn-2': Components.StencilVenn2Attributes;
     'stencil-venn-3': Components.StencilVenn3Attributes;
+    'stencil-venn': Components.StencilVennAttributes;
   }
 
 
@@ -59,14 +72,22 @@ declare global {
     new (): HTMLStencilVenn3Element;
   };
 
+  interface HTMLStencilVennElement extends Components.StencilVenn, HTMLStencilElement {}
+  var HTMLStencilVennElement: {
+    prototype: HTMLStencilVennElement;
+    new (): HTMLStencilVennElement;
+  };
+
   interface HTMLElementTagNameMap {
     'stencil-venn-2': HTMLStencilVenn2Element
     'stencil-venn-3': HTMLStencilVenn3Element
+    'stencil-venn': HTMLStencilVennElement
   }
 
   interface ElementTagNameMap {
     'stencil-venn-2': HTMLStencilVenn2Element;
     'stencil-venn-3': HTMLStencilVenn3Element;
+    'stencil-venn': HTMLStencilVennElement;
   }
 
 
