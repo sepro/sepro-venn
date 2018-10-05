@@ -1,11 +1,11 @@
 import { Component, Prop, Watch } from '@stencil/core';
 
 @Component({
-  tag: 'stencil-venn',
-  styleUrl: 'stencil-venn.css',
+  tag: 'sepro-venn',
+  styleUrl: 'sepro-venn.css',
   shadow: true
 })
-export class StencilVenn {
+export class SeproVenn {
   @Prop() labels: string;
   @Prop() values: string;
 
@@ -26,9 +26,9 @@ export class StencilVenn {
 
   render() {
     if (this.innerLabels.length == 2) {
-      return <stencil-venn-2 labels={ this.labels } values={ this.values } scale={ this.scale }></stencil-venn-2>
+      return <sepro-venn-2 labels={ this.labels } values={ this.values } scale={ this.scale }></sepro-venn-2>
     } else if (this.innerLabels.length == 3) {
-      return <stencil-venn-3 labels={ this.labels } values={ this.values } scale={ this.scale }></stencil-venn-3>
+      return <sepro-venn-3 labels={ this.labels } values={ this.values } scale={ this.scale }></sepro-venn-3>
     } else {
       return <div><p>ERROR: Unsupported number of categories</p></div>
     }

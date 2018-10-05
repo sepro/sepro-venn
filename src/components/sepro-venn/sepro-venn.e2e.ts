@@ -1,11 +1,19 @@
 import { newE2EPage } from '@stencil/core/testing';
 
-describe('stencil-venn-3', () => {
-  it('renders', async () => {
+describe('sepro-venn', () => {
+  it('renders two way diagram', async () => {
     const page = await newE2EPage();
 
-    await page.setContent('<stencil-venn-3 labels=\'["Left", "Right", "Bottom"]\' values=\'[1,2,3,4,5,6,7]\'></stencil-venn-3>');
-    const element = await page.find('stencil-venn-3');
+    await page.setContent('<sepro-venn labels=\'["Left", "Right"]\' values=\'[1,2,3]\'></sepro-venn>');
+    const element = await page.find('sepro-venn');
+    expect(element).toHaveClass('hydrated');
+  });
+
+  it('renders three way diagram', async () => {
+    const page = await newE2EPage();
+
+    await page.setContent('<sepro-venn labels=\'["Left", "Right", "Bottom"]\' values=\'[1,2,3,4,5,6,7]\'></sepro-venn>');
+    const element = await page.find('sepro-venn');
     expect(element).toHaveClass('hydrated');
   });
 

@@ -4,8 +4,8 @@
 
 This javascript library allows you to quickly and effortlessly add venn diagrams to any project. You can add either two set or three set venn diagrams.
 
-    <stencil-venn labels='["Left", "Right"]' values='[1,2,3]'>
-    <stencil-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'>
+    <sepro-venn labels='["Left", "Right"]' values='[1,2,3]'></sepro-venn>
+    <sepro-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'></sepro-venn>
 
 ![two set venn](./docs/two_set.png "Two Set Venn Diagram")
 ![three set venn](./docs/three_set.png "Three Set Venn Diagram")
@@ -14,6 +14,6 @@ This javascript library allows you to quickly and effortlessly add venn diagrams
 
 In case te venn diagrams are two small (or big) a scale value can be added to increase (or decrease) the size:
 
-    <stencil-venn labels='["Left", "Right"]' values='[1,2,3]' scale=2>
+    <sepro-venn labels='["Left", "Right"]' values='[1,2,3]' scale=2></sepro-venn>
 
 By adding the scale=2 attribute the venn diagram will be double the size.

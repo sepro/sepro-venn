@@ -12,34 +12,34 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface StencilVenn2 {
+  interface SeproVenn2 {
     'labels': string;
     'scale': number;
     'values': string;
   }
-  interface StencilVenn2Attributes extends StencilHTMLAttributes {
+  interface SeproVenn2Attributes extends StencilHTMLAttributes {
     'labels'?: string;
     'scale'?: number;
     'values'?: string;
   }
 
-  interface StencilVenn3 {
+  interface SeproVenn3 {
     'labels': string;
     'scale': number;
     'values': string;
   }
-  interface StencilVenn3Attributes extends StencilHTMLAttributes {
+  interface SeproVenn3Attributes extends StencilHTMLAttributes {
     'labels'?: string;
     'scale'?: number;
     'values'?: string;
   }
 
-  interface StencilVenn {
+  interface SeproVenn {
     'labels': string;
     'scale': number;
     'values': string;
   }
-  interface StencilVennAttributes extends StencilHTMLAttributes {
+  interface SeproVennAttributes extends StencilHTMLAttributes {
     'labels'?: string;
     'scale'?: number;
     'values'?: string;
@@ -48,46 +48,46 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'StencilVenn2': Components.StencilVenn2;
-    'StencilVenn3': Components.StencilVenn3;
-    'StencilVenn': Components.StencilVenn;
+    'SeproVenn2': Components.SeproVenn2;
+    'SeproVenn3': Components.SeproVenn3;
+    'SeproVenn': Components.SeproVenn;
   }
 
   interface StencilIntrinsicElements {
-    'stencil-venn-2': Components.StencilVenn2Attributes;
-    'stencil-venn-3': Components.StencilVenn3Attributes;
-    'stencil-venn': Components.StencilVennAttributes;
+    'sepro-venn-2': Components.SeproVenn2Attributes;
+    'sepro-venn-3': Components.SeproVenn3Attributes;
+    'sepro-venn': Components.SeproVennAttributes;
   }
 
 
-  interface HTMLStencilVenn2Element extends Components.StencilVenn2, HTMLStencilElement {}
-  var HTMLStencilVenn2Element: {
-    prototype: HTMLStencilVenn2Element;
-    new (): HTMLStencilVenn2Element;
+  interface HTMLSeproVenn2Element extends Components.SeproVenn2, HTMLStencilElement {}
+  var HTMLSeproVenn2Element: {
+    prototype: HTMLSeproVenn2Element;
+    new (): HTMLSeproVenn2Element;
   };
 
-  interface HTMLStencilVenn3Element extends Components.StencilVenn3, HTMLStencilElement {}
-  var HTMLStencilVenn3Element: {
-    prototype: HTMLStencilVenn3Element;
-    new (): HTMLStencilVenn3Element;
+  interface HTMLSeproVenn3Element extends Components.SeproVenn3, HTMLStencilElement {}
+  var HTMLSeproVenn3Element: {
+    prototype: HTMLSeproVenn3Element;
+    new (): HTMLSeproVenn3Element;
   };
 
-  interface HTMLStencilVennElement extends Components.StencilVenn, HTMLStencilElement {}
-  var HTMLStencilVennElement: {
-    prototype: HTMLStencilVennElement;
-    new (): HTMLStencilVennElement;
+  interface HTMLSeproVennElement extends Components.SeproVenn, HTMLStencilElement {}
+  var HTMLSeproVennElement: {
+    prototype: HTMLSeproVennElement;
+    new (): HTMLSeproVennElement;
   };
 
   interface HTMLElementTagNameMap {
-    'stencil-venn-2': HTMLStencilVenn2Element
-    'stencil-venn-3': HTMLStencilVenn3Element
-    'stencil-venn': HTMLStencilVennElement
+    'sepro-venn-2': HTMLSeproVenn2Element
+    'sepro-venn-3': HTMLSeproVenn3Element
+    'sepro-venn': HTMLSeproVennElement
   }
 
   interface ElementTagNameMap {
-    'stencil-venn-2': HTMLStencilVenn2Element;
-    'stencil-venn-3': HTMLStencilVenn3Element;
-    'stencil-venn': HTMLStencilVennElement;
+    'sepro-venn-2': HTMLSeproVenn2Element;
+    'sepro-venn-3': HTMLSeproVenn3Element;
+    'sepro-venn': HTMLSeproVennElement;
   }
 
 

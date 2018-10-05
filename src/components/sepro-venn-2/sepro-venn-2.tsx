@@ -1,11 +1,11 @@
 import { Component, Prop, Watch } from '@stencil/core';
 
 @Component({
-  tag: 'stencil-venn-2',
-  styleUrl: 'stencil-venn-2.css',
+  tag: 'sepro-venn-2',
+  styleUrl: 'sepro-venn-2.css',
   shadow: true
 })
-export class StencilVenn2 {
+export class SeproVenn2 {
   @Prop() labels: string;
   @Prop() values: string;
 
