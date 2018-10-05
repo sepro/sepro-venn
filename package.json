@@ -1,7 +1,7 @@
 {
-  "name": "stencil-venn",
+  "name": "sepro-venn",
   "version": "0.0.1",
-  "description": "Stencil Base Venn Diagrams",
+  "description": "Sepro-Venn: Web components to display venn diagrams",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
