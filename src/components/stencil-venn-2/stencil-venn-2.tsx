@@ -51,8 +51,8 @@ export class StencilVenn2 {
      </g>
      <g fill="#000000" font-family="sans-serif" font-size="10.583px" letter-spacing="0px" stroke-width="0" word-spacing="0px">
       <text x="19.130795" y="16.756538" style="line-height:1.25"><tspan x="19.130795" y="16.756538" font-size="4.2333px" stroke-width=".26458" text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan></text>
-      <text x="34.008442" y="16.756538" style="line-height:1.25"><tspan x="34.008442" y="16.756538" font-size="4.2333px" stroke-width=".26458" text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan></text>
-      <text x="48.885826" y="16.756538" style="line-height:1.25"><tspan x="48.885826" y="16.756538" font-size="4.2333px" stroke-width=".26458" text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan></text>
+      <text x="34.008442" y="16.756538" style="line-height:1.25"><tspan x="34.008442" y="16.756538" font-size="4.2333px" stroke-width=".26458" text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan></text>
+      <text x="48.885826" y="16.756538" style="line-height:1.25"><tspan x="48.885826" y="16.756538" font-size="4.2333px" stroke-width=".26458" text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan></text>
       <text x="4.6216135" y="3.0707977" style="line-height:1.25"><tspan x="4.6216135" y="3.0707977" font-size="2.8222px" stroke-width=".26458">{ this.innerLabels[0] }</tspan></text>
       <text x="63.257492" y="3.0707977" style="line-height:1.25"><tspan x="63.257492" y="3.0707977" font-size="2.8222px" stroke-width=".26458" text-align="end" text-anchor="end">{ this.innerLabels[1] }</tspan></text>
      </g>

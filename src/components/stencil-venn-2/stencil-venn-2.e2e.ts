@@ -1,11 +1,11 @@
 import { newE2EPage } from '@stencil/core/testing';
 
-describe('stencil-venn', () => {
+describe('stencil-venn-2', () => {
   it('renders', async () => {
     const page = await newE2EPage();
 
-    await page.setContent('<stencil-venn left="A" right="B" left_value="0" intersection_value="0" right_value="0"></stencil-venn');
-    const element = await page.find('stencil-venn');
+    await page.setContent('<stencil-venn-2 labels=\'["Left", "Right"]\' values=\'[1,2,3]\'></stencil-venn-2>');
+    const element = await page.find('stencil-venn-2');
     expect(element).toHaveClass('hydrated');
   });
 

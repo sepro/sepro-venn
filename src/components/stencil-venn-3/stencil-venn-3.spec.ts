@@ -1,6 +1,6 @@
 import { StencilVenn3 } from './stencil-venn-3';
 
-describe('stencil-venn', () => {
+describe('stencil-venn-3', () => {
   it('builds', () => {
     expect(new StencilVenn3()).toBeTruthy();
   });
@@ -9,8 +9,8 @@ describe('stencil-venn', () => {
     it('returns correct width, height and transformation on default scale', () => {
       const component = new StencilVenn3();
       expect(component.width()).toEqual(296);
-      expect(component.height()).toEqual(116);
-      expect(component.transform()).toEqual('matrix(4 0 0 4 0 0)');
+      expect(component.height()).toEqual(260);
+      expect(component.transform()).toEqual('matrix(1 0 0 1 0 0)');
     });
 
     /*it('formats just first names', () => {
