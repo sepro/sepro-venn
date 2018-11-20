@@ -13,26 +13,27 @@
   <p>Examples of the sepro-venn component with two and three sets.</p>
   <div align="center">
   <h2>Two Sets</h2>
-  <sepro-venn 
+  <sepro-venn-2 
     labels='["Left", "Right"]'
     values='[1,2,3]'
-    scale=1></sepro-venn>
+    scale=1></sepro-venn-2>
+    <hr />
+    <h2>Three Sets</h2>
+    <sepro-venn-3 
+    labels='["Left", "Right", "Bottom"]'
+    values='[1,2,3,4,5,6,7]'></sepro-venn-3>
+    <hr />
+    <h2>Three Sets 150% size</h2>
+    <sepro-venn-3 
+    labels='["Left", "Right", "Bottom"]'
+    values='[1,2,3,4,5,6,7]'
+    scale=1.5></sepro-venn-3>
+    <hr />
+    <h2>Auto Detect Number of Sets</h2>
     <sepro-venn 
     labels='["Left", "Right"]'
     values='["A","B","AB"]'
     scale=1></sepro-venn>
-    <hr />
-    <h2>Three Sets</h2>
-    <sepro-venn 
-    labels='["Left", "Right", "Bottom"]'
-    values='[1,2,3,4,5,6,7]'></sepro-venn>
-    <hr />
-    <h2>Three Sets 150% size</h2>
-    <sepro-venn 
-    labels='["Left", "Right", "Bottom"]'
-    values='[1,2,3,4,5,6,7]'
-    scale=1.5></sepro-venn>
-    <hr />
     <h2>More is currently not supported</h2>
     <sepro-venn 
     labels='["Left", "Right", "Bottom", "Top"]'
