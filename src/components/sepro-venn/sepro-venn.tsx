@@ -29,9 +29,10 @@ export class SeproVenn {
       return <sepro-venn-2 labels={ this.labels } values={ this.values } scale={ this.scale }></sepro-venn-2>
     } else if (this.innerLabels.length == 3) {
       return <sepro-venn-3 labels={ this.labels } values={ this.values } scale={ this.scale }></sepro-venn-3>
+    } else if (this.innerLabels.length == 4) {
+      return <sepro-venn-4 labels={ this.labels } values={ this.values } scale={ this.scale }></sepro-venn-4>
     } else {
       return <div><p>ERROR: Unsupported number of categories</p></div>
     }
-      
   }
 }

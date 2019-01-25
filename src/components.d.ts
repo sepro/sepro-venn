@@ -34,6 +34,17 @@ export namespace Components {
     'values'?: string;
   }
 
+  interface SeproVenn4 {
+    'labels': string;
+    'scale': number;
+    'values': string;
+  }
+  interface SeproVenn4Attributes extends StencilHTMLAttributes {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
+
   interface SeproVenn {
     'labels': string;
     'scale': number;
@@ -50,12 +61,14 @@ declare global {
   interface StencilElementInterfaces {
     'SeproVenn2': Components.SeproVenn2;
     'SeproVenn3': Components.SeproVenn3;
+    'SeproVenn4': Components.SeproVenn4;
     'SeproVenn': Components.SeproVenn;
   }
 
   interface StencilIntrinsicElements {
     'sepro-venn-2': Components.SeproVenn2Attributes;
     'sepro-venn-3': Components.SeproVenn3Attributes;
+    'sepro-venn-4': Components.SeproVenn4Attributes;
     'sepro-venn': Components.SeproVennAttributes;
   }
 
@@ -72,6 +85,12 @@ declare global {
     new (): HTMLSeproVenn3Element;
   };
 
+  interface HTMLSeproVenn4Element extends Components.SeproVenn4, HTMLStencilElement {}
+  var HTMLSeproVenn4Element: {
+    prototype: HTMLSeproVenn4Element;
+    new (): HTMLSeproVenn4Element;
+  };
+
   interface HTMLSeproVennElement extends Components.SeproVenn, HTMLStencilElement {}
   var HTMLSeproVennElement: {
     prototype: HTMLSeproVennElement;
@@ -81,12 +100,14 @@ declare global {
   interface HTMLElementTagNameMap {
     'sepro-venn-2': HTMLSeproVenn2Element
     'sepro-venn-3': HTMLSeproVenn3Element
+    'sepro-venn-4': HTMLSeproVenn4Element
     'sepro-venn': HTMLSeproVennElement
   }
 
   interface ElementTagNameMap {
     'sepro-venn-2': HTMLSeproVenn2Element;
     'sepro-venn-3': HTMLSeproVenn3Element;
+    'sepro-venn-4': HTMLSeproVenn4Element;
     'sepro-venn': HTMLSeproVennElement;
   }
 
