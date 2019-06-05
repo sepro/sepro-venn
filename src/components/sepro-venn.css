@@ -14,3 +14,27 @@ text {
     user-select: none;
     pointer-events: none;
  }
+
+ .text_value_2 {
+     font-size: 3px;
+ }
+
+ .text_label_2 {
+    font-size: 3px;
+}
+
+.text_value_3 {
+    font-size: 12px;
+}
+
+.text_label_3 {
+   font-size: 12px;
+}
+
+.text_value_4 {
+    font-size: 12px;
+}
+
+.text_label_4 {
+   font-size: 12px;
+}

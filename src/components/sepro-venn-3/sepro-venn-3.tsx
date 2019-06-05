@@ -53,36 +53,36 @@ export class SeproVenn3 {
       <path class="grow" d="m208.05 153.31a73.506 73.506 0 0 1-34.58 8.7051 73.506 73.506 0 0 1-38.793-11.176 73.506 73.506 0 0 1-38.885 11.176 73.506 73.506 0 0 1-34.545-8.6621 73.506 73.506 0 0 0-0.12109 2.4277 73.506 73.506 0 0 0 73.506 73.506 73.506 73.506 0 0 0 73.506-73.506 73.506 73.506 0 0 0-0.0879-2.4707z" fill="#f55"/>
       <path class="grow" d="m134.67 150.84a73.506 73.506 0 0 0 34.5-59.902 73.506 73.506 0 0 0-34.545-8.6621 73.506 73.506 0 0 0-34.58 8.707 73.506 73.506 0 0 0 34.625 59.857z" fill="#87decd"/>
       </g>
-      <g fill="#000000" font-family="sans-serif" font-size="48px" letter-spacing="0px" stroke-width="1.0583" word-spacing="0px">
-      <text x="72.733826" y="71.964066" style="line-height:1.25">
-        <tspan x="72.733826" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan>
+      <g>
+      <text class="text_value_3" x="72.733826" y="71.964066">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan>
       </text>
-      <text x="134.6283" y="71.964066" style="line-height:1.25">
-        <tspan x="134.6283" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[3] }</tspan>
+      <text class="text_value_3" x="134.6283" y="71.964066">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[3] }</tspan>
       </text>
-      <text x="196.47906" y="71.964066" style="line-height:1.25">
-        <tspan x="196.47906" y="71.964066" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan>
+      <text class="text_value_3" x="196.47906" y="71.964066">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan>
       </text>
-      <text x="15.367762" y="8.207531" style="line-height:1.25">
-        <tspan x="15.367762" y="8.207531" font-size="11.289px" stroke-width="1.0583">{ this.innerLabels[0] }</tspan>
+      <text class="text_label_3" x="15.367762" y="10.207531">
+        <tspan  text-align="center" text-anchor="middle">{ this.innerLabels[0] }</tspan>
       </text>
-      <text x="249.91129" y="8.207531" style="line-height:1.25">
-        <tspan x="249.91129" y="8.207531" font-size="11.289px" stroke-width="1.0583" text-align="end" text-anchor="end">{ this.innerLabels[1] }</tspan>
+      <text class="text_label_3" x="249.91129" y="10.207531">
+        <tspan text-align="end" text-anchor="end">{ this.innerLabels[1] }</tspan>
       </text>
-      <text x="134.35367" y="243.97731" style="line-height:1.25">
-        <tspan x="134.35367" y="243.97731" font-size="11.289px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerLabels[2] }</tspan>
+      <text class="text_label_3" x="134.35367" y="243.97731">
+        <tspan text-align="center" text-anchor="middle">{ this.innerLabels[2] }</tspan>
       </text>
-      <text x="134.62927" y="200.15001" style="line-height:1.25">
-        <tspan x="134.62927" y="200.15001" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan>
+      <text class="text_value_3" x="134.62927" y="200.15001">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan>
       </text>
-      <text x="134.61136" y="118.76494" style="line-height:1.25">
-        <tspan x="134.61136" y="118.76494" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[6] }</tspan>
+      <text class="text_value_3" x="134.61136" y="118.76494">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[6] }</tspan>
       </text>
-      <text x="171.06842" y="142.40825" style="line-height:1.25">
-        <tspan x="171.06842" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[4] }</tspan>
+      <text class="text_value_3" x="171.06842" y="142.40825">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[4] }</tspan>
       </text>
-      <text x="98.203461" y="142.40825" style="line-height:1.25">
-        <tspan x="98.203461" y="142.40825" font-size="16.933px" stroke-width="1.0583" text-align="center" text-anchor="middle">{ this.innerValues[5] }</tspan>
+      <text class="text_value_3" x="98.203461" y="142.40825">
+        <tspan text-align="center" text-anchor="middle">{ this.innerValues[5] }</tspan>
       </text>
       </g>
     </g>

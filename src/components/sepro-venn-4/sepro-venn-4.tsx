@@ -64,35 +64,35 @@ export class SeproVenn4 {
         <path class="grow" d="m242.46-12.957a142.08 69.647 45.836 0 1 10.883 40.521 142.08 69.647 45.836 0 1-44.553-17.571 69.647 142.08 44.164 0 0 33.67-22.951z" fill="#9dc89d"/>
       </g>
       </g>
-      <g fill="#000000" font-family="sans-serif" letter-spacing="0px" word-spacing="0px">
       <g>
-        <text x="76.252144" y="-64.079567" font-size="44.126px" stroke-width="1.1032" style="line-height:1.25"><tspan x="76.252144" y="-64.079567" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan></text>
-        <text x="149.03482" y="-147.47998" font-size="22.063px" stroke-width="1.1032" style="line-height:1.25"><tspan x="149.03482" y="-147.47998" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan></text>
-        <text x="267.57089" y="-147.47998" style="line-height:1.25"><tspan x="267.57089" y="-147.47998" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan></text>
-        <text x="343.84857" y="-64.079567" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan x="343.84857" y="-64.079567" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[3] }</tspan></text>
-        <text x="210.03841" y="51.429333" style="line-height:1.25"><tspan x="210.03841" y="51.429333" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[8] }</tspan></text>
-        <text x="123.5993" y="-106.48895" style="line-height:1.25"><tspan x="123.5993" y="-106.48895" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[4] }</tspan></text>
-        <text x="208.53946" y="-114.00911" font-size="40.588px" stroke-width="1.0147" style="line-height:1.25"><tspan x="208.53946" y="-114.00911" font-size="20.294px" stroke-width="1.0147" text-align="center" text-anchor="middle">{ this.innerValues[5] }</tspan></text>
-        <text x="295.77728" y="-107.27691" style="line-height:1.25"><tspan x="295.77728" y="-107.27691" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[6] }</tspan></text>
-        <text x="281.01645" y="-1.6893667" style="line-height:1.25"><tspan x="281.01645" y="-1.6893667" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[7] }</tspan></text>
-        <text x="132.64716" y="-1.6893667" style="line-height:1.25"><tspan x="132.64716" y="-1.6893667" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[9] }</tspan></text>
-        <text x="165.95892" y="-63.150776" style="line-height:1.25"><tspan x="165.95892" y="-63.150776" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[10] }</tspan></text>
-        <text x="251.96107" y="-63.150776" style="line-height:1.25"><tspan x="251.96107" y="-63.150776" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[11] }</tspan></text>
-        <text x="237.21414" y="14.939892" style="line-height:1.25"><tspan x="237.21414" y="14.939892" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[12] }</tspan></text>
-        <text x="182.8627" y="15.776066" style="line-height:1.25"><tspan x="182.8627" y="15.776066" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[13] }</tspan></text>
-        <text x="210.34605" y="-11.144965" style="line-height:1.25"><tspan x="210.34605" y="-11.144965" font-size="22.063px" stroke-width="1.1032" text-align="center" text-anchor="middle">{ this.innerValues[14] }</tspan></text>
+      <g>
+        <text class="text_value_4" x="76.252144" y="-64.079567"><tspan text-align="center" text-anchor="middle">{ this.innerValues[0] }</tspan></text>
+        <text class="text_value_4" x="149.03482" y="-147.47998"><tspan text-align="center" text-anchor="middle">{ this.innerValues[1] }</tspan></text>
+        <text class="text_value_4" x="267.57089" y="-147.47998"><tspan text-align="center" text-anchor="middle">{ this.innerValues[2] }</tspan></text>
+        <text class="text_value_4" x="343.84857" y="-64.079567"><tspan text-align="center" text-anchor="middle">{ this.innerValues[3] }</tspan></text>
+        <text class="text_value_4" x="210.03841" y="51.429333"><tspan text-align="center" text-anchor="middle">{ this.innerValues[8] }</tspan></text>
+        <text class="text_value_4" x="123.5993" y="-106.48895"><tspan text-align="center" text-anchor="middle">{ this.innerValues[4] }</tspan></text>
+        <text class="text_value_4" x="208.53946" y="-114.00911"><tspan text-align="center" text-anchor="middle">{ this.innerValues[5] }</tspan></text>
+        <text class="text_value_4" x="295.77728" y="-107.27691"><tspan text-align="center" text-anchor="middle">{ this.innerValues[6] }</tspan></text>
+        <text class="text_value_4" x="281.01645" y="-1.6893667"><tspan text-align="center" text-anchor="middle">{ this.innerValues[7] }</tspan></text>
+        <text class="text_value_4" x="132.64716" y="-1.6893667"><tspan text-align="center" text-anchor="middle">{ this.innerValues[9] }</tspan></text>
+        <text class="text_value_4" x="165.95892" y="-63.150776"><tspan text-align="center" text-anchor="middle">{ this.innerValues[10] }</tspan></text>
+        <text class="text_value_4" x="251.96107" y="-63.150776"><tspan text-align="center" text-anchor="middle">{ this.innerValues[11] }</tspan></text>
+        <text class="text_value_4" x="237.21414" y="14.939892"><tspan text-align="center" text-anchor="middle">{ this.innerValues[12] }</tspan></text>
+        <text class="text_value_4" x="182.8627" y="15.776066"><tspan text-align="center" text-anchor="middle">{ this.innerValues[13] }</tspan></text>
+        <text class="text_value_4" x="210.34605" y="-11.144965"><tspan text-align="center" text-anchor="middle">{ this.innerValues[14] }</tspan></text>
       </g>
-        <text x="127.57307" y="-214.07426" style="line-height:1.25">
-          <tspan x="127.57307" y="-214.07426" font-size="12.453px" stroke-width="1.1675" text-align="center" text-anchor="middle">{ this.innerLabels[1] }</tspan>
+        <text class="text_label_4" x="127.57307" y="-214.07426">
+          <tspan x="127.57307" y="-214.07426" text-align="center" text-anchor="middle">{ this.innerLabels[1] }</tspan>
         </text>
-        <text x="290.06705" y="-214.07426" style="line-height:1.25">
-          <tspan x="290.06705" y="-214.07426" font-size="12.453px" stroke-width="1.1675" text-align="center" text-anchor="middle">{ this.innerLabels[2] }</tspan>
+        <text class="text_label_4" x="290.06705" y="-214.07426">
+          <tspan x="290.06705" y="-214.07426" text-align="center" text-anchor="middle">{ this.innerLabels[2] }</tspan>
         </text>
-        <text x="28.304586" y="-157.37126" style="line-height:1.25">
-          <tspan x="28.304586" y="-157.37126" font-size="12.453px" stroke-width="1.1675" text-align="center" text-anchor="middle">{ this.innerLabels[0] }</tspan>
+        <text class="text_label_4" x="28.304586" y="-157.37126">
+          <tspan x="28.304586" y="-157.37126" text-align="center" text-anchor="middle">{ this.innerLabels[0] }</tspan>
         </text>
-        <text x="389.33554" y="-157.37126" stroke-width="1.1675" style="line-height:1.25">
-          <tspan x="389.33554" y="-157.37126" font-size="12.453px" stroke-width="1.1675" text-align="center" text-anchor="middle">{ this.innerLabels[3] }</tspan>
+        <text class="text_label_4" x="389.33554" y="-157.37126">
+          <tspan x="389.33554" y="-157.37126" text-align="center" text-anchor="middle">{ this.innerLabels[3] }</tspan>
         </text>
       </g>
     </g>

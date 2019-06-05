@@ -1,6 +1,6 @@
 {
   "name": "sepro-venn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sepro-Venn: Web components to display venn diagrams",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -27,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/sepro/sepro-venn.git"
   },
-  "author": "Ionic Team",
+  "author": "Sebastian Proost",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/sepro/sepro-venn"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/sepro/sepro-venn"
 }
