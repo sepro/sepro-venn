@@ -12,6 +12,19 @@ Check out our [DEMO](https://sepro.github.com/sepro-venn/)
 ![two set venn](./docs/two_set.png "Two Set Venn Diagram")
 ![three set venn](./docs/three_set.png "Three Set Venn Diagram")
 
+## Usage
+
+Get the latest build from [here](https://github.com/sepro/sepro-venn/releases), add it to your web project (here in the folder js) and load **sepro-venn.js** in the html page header.
+
+    <script src="./js/sepro-venn.js"></script>
+
+Throughout the page you can now include venn diagrams using the <sepro-venn> tag.
+
+    <sepro-venn labels='["Left", "Right"]' values='[1,2,3]'></sepro-venn>
+    <sepro-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'></sepro-venn>
+
+# Advanced features
+
 ## Scaling things up (or down)
 
 In case te venn diagrams are two small (or big) a scale value can be added to increase (or decrease) the size:
@@ -19,3 +32,7 @@ In case te venn diagrams are two small (or big) a scale value can be added to in
     <sepro-venn labels='["Left", "Right"]' values='[1,2,3]' scale=2></sepro-venn>
 
 By adding the scale=2 attribute the venn diagram will be double the size.
+
+# Acknowledgements
+
+This library was initiated as a personal, hobby project to learn Stencil.js. Sepro-Venn is now further developped at [KULeuven](https://www.kuleuven.be/kuleuven/) and [VIB](http://www.vib.be/) where it is also included in other (upcoming) software projects.
