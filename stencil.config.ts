@@ -4,7 +4,8 @@ export const config: Config = {
   namespace: 'sepro-venn',
   outputTargets:[
     {
-      type: 'dist'
+      type: 'dist',
+      buildDir: 'sepro-venn'
     },
     {
       type: 'www',

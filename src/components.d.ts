@@ -5,73 +5,40 @@
  */
 
 
-import '@stencil/core';
-
-
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-
-  interface SeproVenn2 {
-    'labels': string;
-    'scale': number;
-    'values': string;
-  }
-  interface SeproVenn2Attributes extends StencilHTMLAttributes {
-    'labels'?: string;
-    'scale'?: number;
-    'values'?: string;
-  }
-
-  interface SeproVenn3 {
-    'labels': string;
-    'scale': number;
-    'values': string;
-  }
-  interface SeproVenn3Attributes extends StencilHTMLAttributes {
-    'labels'?: string;
-    'scale'?: number;
-    'values'?: string;
-  }
-
-  interface SeproVenn4 {
-    'labels': string;
-    'scale': number;
-    'values': string;
-  }
-  interface SeproVenn4Attributes extends StencilHTMLAttributes {
-    'labels'?: string;
-    'scale'?: number;
-    'values'?: string;
-  }
-
   interface SeproVenn {
     'labels': string;
     'scale': number;
     'values': string;
   }
-  interface SeproVennAttributes extends StencilHTMLAttributes {
-    'labels'?: string;
-    'scale'?: number;
-    'values'?: string;
+  interface SeproVenn2 {
+    'labels': string;
+    'scale': number;
+    'values': string;
+  }
+  interface SeproVenn3 {
+    'labels': string;
+    'scale': number;
+    'values': string;
+  }
+  interface SeproVenn4 {
+    'labels': string;
+    'scale': number;
+    'values': string;
   }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'SeproVenn2': Components.SeproVenn2;
-    'SeproVenn3': Components.SeproVenn3;
-    'SeproVenn4': Components.SeproVenn4;
-    'SeproVenn': Components.SeproVenn;
-  }
 
-  interface StencilIntrinsicElements {
-    'sepro-venn-2': Components.SeproVenn2Attributes;
-    'sepro-venn-3': Components.SeproVenn3Attributes;
-    'sepro-venn-4': Components.SeproVenn4Attributes;
-    'sepro-venn': Components.SeproVennAttributes;
-  }
 
+  interface HTMLSeproVennElement extends Components.SeproVenn, HTMLStencilElement {}
+  var HTMLSeproVennElement: {
+    prototype: HTMLSeproVennElement;
+    new (): HTMLSeproVennElement;
+  };
 
   interface HTMLSeproVenn2Element extends Components.SeproVenn2, HTMLStencilElement {}
   var HTMLSeproVenn2Element: {
@@ -90,34 +57,51 @@ declare global {
     prototype: HTMLSeproVenn4Element;
     new (): HTMLSeproVenn4Element;
   };
-
-  interface HTMLSeproVennElement extends Components.SeproVenn, HTMLStencilElement {}
-  var HTMLSeproVennElement: {
-    prototype: HTMLSeproVennElement;
-    new (): HTMLSeproVennElement;
-  };
-
   interface HTMLElementTagNameMap {
-    'sepro-venn-2': HTMLSeproVenn2Element
-    'sepro-venn-3': HTMLSeproVenn3Element
-    'sepro-venn-4': HTMLSeproVenn4Element
-    'sepro-venn': HTMLSeproVennElement
-  }
-
-  interface ElementTagNameMap {
+    'sepro-venn': HTMLSeproVennElement;
     'sepro-venn-2': HTMLSeproVenn2Element;
     'sepro-venn-3': HTMLSeproVenn3Element;
     'sepro-venn-4': HTMLSeproVenn4Element;
-    'sepro-venn': HTMLSeproVennElement;
   }
-
-
-  export namespace JSX {
-    export interface Element {}
-    export interface IntrinsicElements extends StencilIntrinsicElements {
-      [tagName: string]: any;
-    }
-  }
-  export interface HTMLAttributes extends StencilHTMLAttributes {}
-
 }
+
+declare namespace LocalJSX {
+  interface SeproVenn extends JSXBase.HTMLAttributes<HTMLSeproVennElement> {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
+  interface SeproVenn2 extends JSXBase.HTMLAttributes<HTMLSeproVenn2Element> {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
+  interface SeproVenn3 extends JSXBase.HTMLAttributes<HTMLSeproVenn3Element> {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
+  interface SeproVenn4 extends JSXBase.HTMLAttributes<HTMLSeproVenn4Element> {
+    'labels'?: string;
+    'scale'?: number;
+    'values'?: string;
+  }
+
+  interface IntrinsicElements {
+    'sepro-venn': SeproVenn;
+    'sepro-venn-2': SeproVenn2;
+    'sepro-venn-3': SeproVenn3;
+    'sepro-venn-4': SeproVenn4;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+
