@@ -18,7 +18,7 @@ Get the latest build from [here](https://github.com/sepro/sepro-venn/releases), 
 
     <script src="./js/sepro-venn.js"></script>
 
-Throughout the page you can now include venn diagrams using the <sepro-venn> tag.
+Throughout the page you can now include venn diagrams using the **sepro-venn** tag.
 
     <sepro-venn labels='["Left", "Right"]' values='[1,2,3]'></sepro-venn>
     <sepro-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'></sepro-venn>
