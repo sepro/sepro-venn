@@ -1,0 +1,33 @@
+{
+  "namespace": "SeproVenn",
+  "fsNamespace": "sepro-venn",
+  "loader": "../sepro-venn.js",
+  "core": "sepro-venn.m7o4br0w.js",
+  "corePolyfilled": "sepro-venn.wycpemc9.js",
+  "components": {
+    "sepro-venn": {
+      "bundleIds": {
+        "$": "y72exeo8"
+      },
+      "encapsulation": "shadow"
+    },
+    "sepro-venn-2": {
+      "bundleIds": {
+        "$": "y72exeo8"
+      },
+      "encapsulation": "shadow"
+    },
+    "sepro-venn-3": {
+      "bundleIds": {
+        "$": "y72exeo8"
+      },
+      "encapsulation": "shadow"
+    },
+    "sepro-venn-4": {
+      "bundleIds": {
+        "$": "y72exeo8"
+      },
+      "encapsulation": "shadow"
+    }
+  }
+}
