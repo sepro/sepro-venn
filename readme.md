@@ -27,11 +27,11 @@ Throughout the page you can now include venn diagrams using the <sepro-venn> tag
 
 ## Scaling things up (or down)
 
-In case te venn diagrams are two small (or big) a scale value can be added to increase (or decrease) the size:
+In case the venn diagrams are two small (or big) the scale attribute can be added to increase (or decrease) the size:
 
     <sepro-venn labels='["Left", "Right"]' values='[1,2,3]' scale=2></sepro-venn>
 
-By adding the scale=2 attribute the venn diagram will be double the size.
+By adding the **scale=2** attribute the venn diagram will be double the size.
 
 # Acknowledgements
 
