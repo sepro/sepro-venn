@@ -35,4 +35,4 @@ By adding the **scale=2** attribute the venn diagram will be double the size.
 
 # Acknowledgements
 
-This library was initiated as a personal, hobby project to learn Stencil.js. Sepro-Venn is now further developped at [KULeuven](https://www.kuleuven.be/kuleuven/) and [VIB](http://www.vib.be/) where it is also included in other (upcoming) software projects.
+This library was initiated as a personal, hobby project to learn Stencil.js. Sepro-Venn is now further developed at [KULeuven](https://www.kuleuven.be/kuleuven/) and [VIB](http://www.vib.be/) where it is also included in other (upcoming) software projects.
