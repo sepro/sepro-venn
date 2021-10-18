@@ -4,7 +4,7 @@
 
 This javascript library allows you to quickly and effortlessly add venn diagrams to any project. You can add either two set or three set venn diagrams.
 
-Check out our [DEMO](https://sepro.github.com/sepro-venn/)
+Check out our [DEMO](https://sebastian.proost.science/sepro-venn/)
 
     <sepro-venn labels='["Left", "Right"]' values='[1,2,3]'></sepro-venn>
     <sepro-venn labels='["Left", "Right", "Bottom"]' values='[1,2,3,4,5,6,7]'></sepro-venn>
